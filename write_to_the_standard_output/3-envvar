@@ -1,2 +1,3 @@
 #!/bin/bash
-Echo "Hello, my shell is" $SHELL
+variable="Hello, my shell is $SHELL"
+echo $variable
