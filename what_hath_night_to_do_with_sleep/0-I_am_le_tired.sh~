@@ -1,3 +1,0 @@
-#!/bin/bash
-sleep 9.8s
-printf "2 3\n"
