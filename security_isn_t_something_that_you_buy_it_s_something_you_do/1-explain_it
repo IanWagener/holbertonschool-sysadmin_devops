@@ -1,0 +1,5 @@
+1. To create an 4096 bit SSH key, you need to type in terminal "ssh-keygen -t rsa -b 4096 -C "email@example.com"". Once that key has been created you will be prompted with a question asking where you want the file to be saved to, and then it will also ask you to set a password so that you can use the key. 
+
+2. After copying the public key, you can send it to other parties, to authenticate yourself, it can also be used if you want to send encrypted messages to someone.
+
+3. The private key should be protected with a password that only you know. You will also be the only person with access to this key as it is stored on your computer.
