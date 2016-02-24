@@ -1,2 +1,3 @@
 #!/bin/bash
-sleep $1.$2
+sleep $(($1. + $2/10 ))
+
