@@ -1,12 +1,13 @@
 #!/bin/bash
-FILE=$1
-
-exec 3<&0
-exec 0<$FILE
+HEAD=0
+GET=0
 while read line;
 do
     if [[ $line =~ "HEAD" ]]; then
-	grep -c "HEAD"
+	HEAD=$(($HEAD + 1))
+    elif [[ $line =~ "GET" ]]; then
+	GET=$(($GET + 1))
     fi
-done
-exec 0<&3
+done <$1
+echo $HEAD
+echo $GET
