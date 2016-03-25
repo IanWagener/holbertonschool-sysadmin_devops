@@ -1,1 +1,2 @@
 #!/bin/bash
+find /$PWD -name *.gif | xargs basename -a
